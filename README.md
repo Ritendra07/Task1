@@ -37,11 +37,3 @@ This improves performance of models that are sensitive to feature scaling.
 Outliers are detected using **boxplots**:
 - Outliers in features like `Fare` are removed using the **Interquartile Range (IQR)** method to prevent skewed results and improve model performance.
 
----
-
-## 📦 Dependencies
-
-Install the following Python libraries before running the scripts:
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn
