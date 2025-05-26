@@ -1,0 +1,2 @@
+# Convert 'Sex' and 'Embarked' using label encoding or one-hot encoding
+df = pd.get_dummies(df, columns=['Sex', 'Embarked'], drop_first=True)
