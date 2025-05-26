@@ -1,0 +1,8 @@
+# Example: Fill missing Age values with the median
+df['Age'].fillna(df['Age'].median(), inplace=True)
+
+# Fill Embarked (categorical) with mode
+df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+
+# Drop Cabin if too many missing values
+df.drop('Cabin', axis=1, inplace=True)
